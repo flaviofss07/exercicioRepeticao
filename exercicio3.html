@@ -1,0 +1,44 @@
+<html>
+<script>
+
+
+    for (let i = 0; i < 100; i++) {
+        let nome = prompt('Digite nome');
+        let idade = prompt('Digite idade');
+        let salario = prompt('Digite salario');
+        let sexo = prompt('Digite sexo');
+        let estadoCivil = prompt('Digite estado civil');
+
+        if (length.nome >= 3) {
+            if (idade > 0 || idade < 150) {
+                if (salario > 0) {
+                    if (sexo == 'f' && sexo == 'm') {
+                        if (estadoCivil == 's' && estadoCivil == 'c' && estadoCivil == 'v' && estadoCivil == 'd') {
+                            alert('Tudo Ok!');
+                            break;
+                        } else {
+                            alert('Digite apenas "S", "C", "V" ou "D"');
+                        }
+                    } else {
+                        alert('Digite para sexo apenas "F" ou "M"');
+                    }
+                } else {
+                    alert('Digite um salário maior que 0');
+                }
+            } else {
+                alert('Digite idade entre 0 e 150');
+            }
+
+        } else {
+            alert('Digite um o nome maior que 3 caracteres');
+        }
+    }
+
+
+
+
+
+    alert('Cadastro Realizado');
+</script>
+
+</html>
