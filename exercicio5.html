@@ -1,0 +1,27 @@
+<html>
+    <script>
+    
+    
+    let populaocaoA = parseFloat(prompt('Digite o número de habitantes do país A'));
+    let populaocaoB = parseFloat(prompt('Digite o número de habitantes do país B'));
+
+    const taxaA = parseFloat(prompt('Digite a taxa de crescimento do país A'));
+    const taxaB = parseFloat(prompt('Digite a taxa de crescimento do país B'));
+
+    let qtdAnos = 0;
+
+    for(let i = 0; i < 100; i++){
+        populaocaoA += ((populaocaoA * taxaA)/100);
+        populaocaoB += ((populaocaoB * taxaB)/100);
+        if(populaocaoA >= populaocaoB){
+            qtdAnos = i;
+            break;
+        }
+
+    }
+    alert('Populção A: ' + populaocaoA + '\n'
+        + 'Populção B: ' + populaocaoB + '\n'
+        + 'Quantidades de anos; ' + qtdAnos);
+    
+    </script>
+</html>

@@ -1,0 +1,26 @@
+<html>
+    <script>
+    
+    let populaocaoA = 80000;
+    let populaocaoB = 200000;
+
+    const taxaA = 3/100;
+    const taxaB = 1.5/100;
+
+    let qtdAnos = 0;
+
+    for(let i = 0; i < 100; i++){
+        populaocaoA += populaocaoA * taxaA;
+        populaocaoB += populaocaoB * taxaB;
+        if(populaocaoA >= populaocaoB){
+            qtdAnos = i;
+            break;
+        }
+
+    }
+    alert('Populção A: ' + populaocaoA + '\n'
+        + 'Populção B: ' + populaocaoB + '\n'
+        + 'Quantidades de anos; ' + qtdAnos);
+    
+    </script>
+</html>

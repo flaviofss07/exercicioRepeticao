@@ -1,16 +1,42 @@
 <html>
 <script>
 
-
+let nome = '';
     for (let i = 0; i < 100; i++) {
-        let nome = prompt('Digite nome');
-        let idade = prompt('Digite idade');
+        let nome = prompt('Digite nome').trim();
+
+        /////
+        let idade = 0;
+        for (let i = 0; i < 100; i++) {
+            idade = prompt('Digite idade').trim();
+            idade = parseInt(idade);
+            if (idade >= 0 && idade <= 150) {
+                break;
+            } else {
+                alert('Idade invalida!!!');
+            }
+        }
+        alert('Idade: '+ idade);
         let salario = prompt('Digite salario');
         let sexo = prompt('Digite sexo');
         let estadoCivil = prompt('Digite estado civil');
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         if (length.nome >= 3) {
-            if (idade > 0 || idade < 150) {
+            
                 if (salario > 0) {
                     if (sexo == 'f' && sexo == 'm') {
                         if (estadoCivil == 's' && estadoCivil == 'c' && estadoCivil == 'v' && estadoCivil == 'd') {
